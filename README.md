@@ -49,6 +49,25 @@ PORT=8000 python app.py
 
 To run in development mode with auto-reload, set `debug=True` in `app.py` (it is on by default).
 
+## Run in production (Gunicorn)
+
+[`gunicorn.conf.py`](gunicorn.conf.py) runs the app as a background daemon bound to `0.0.0.0:8085`, with logs and a PID file under `var/`.
+
+```bash
+# start (runs in the background)
+gunicorn -c gunicorn.conf.py app:app
+
+# check it's up
+curl -s -o /dev/null -w "%{http_code}\n" http://127.0.0.1:8085/login
+
+# stop
+kill $(cat var/run/dimi-ul.pid)
+```
+
+Logs are written to `var/log/dimi-ul.log`; the PID file is `var/run/dimi-ul.pid` (both directories are created automatically and are gitignored).
+
+The config uses a single `gthread` worker with 4 threads — right for Flask + SQLite, since a single process avoids "database is locked" errors. `reload` is off for production.
+
 ## Demo user
 
 On first startup the app seeds a demo account so you can explore it with data:

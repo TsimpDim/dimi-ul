@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 dimi_ul.db
 .secret_key
+var/
