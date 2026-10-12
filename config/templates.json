@@ -1,0 +1,108 @@
+{
+  "app_name": "Dimi UL",
+  "templates": [
+    {
+      "id": "upper_a",
+      "name": "Upper A",
+      "color": "#FF5C7A",
+      "emoji": "🔥",
+      "exercises": [
+        { "block": "A1", "name": "Incline Dumbbell Press", "sets_reps": "3 x 8-12", "notes": "Superset with A2. Rest 60s after A2.", "metric": "reps" },
+        { "block": "A2", "name": "Chest-Supported T-Bar Row", "sets_reps": "3 x 8-12", "notes": "Squeeze lats at the top.", "metric": "reps" },
+        { "block": "B1", "name": "Weighted Dips", "sets_reps": "3 x 8-12", "notes": "Superset with B2. Rest 60s after B2.", "metric": "reps" },
+        { "block": "B2", "name": "Neutral Grip Pull-Ups", "sets_reps": "3 x 8-12", "notes": "Strict dead-hang to engage forearms.", "metric": "reps" },
+        { "block": "C1", "name": "Overhead Cable Tricep Extension", "sets_reps": "3 x 10-15", "notes": "Superset with C2. Rest 60s after C2.", "metric": "reps" },
+        { "block": "C2", "name": "Incline Dumbbell Curl", "sets_reps": "3 x 10-15", "notes": "Deep stretch at the bottom.", "metric": "reps" }
+      ]
+    },
+    {
+      "id": "lower_a",
+      "name": "Lower A",
+      "color": "#00BFA6",
+      "emoji": "🦵",
+      "exercises": [
+        { "block": "A", "name": "Back Squats", "sets_reps": "3 x 5-8", "notes": "Heavy load. Rest 2-3 minutes.", "metric": "reps" },
+        { "block": "B", "name": "Bulgarian Split Squats", "sets_reps": "3 x 8-12", "notes": "Rest 90s between legs.", "metric": "reps" },
+        { "block": "C", "name": "Leg Press", "sets_reps": "3 x 10-15", "notes": "Deep range of motion. Rest 90s.", "metric": "reps" },
+        { "block": "D", "name": "Standing Calf Raises", "sets_reps": "4 x 10-15", "notes": "2-second pause at the bottom stretch.", "metric": "reps" },
+        { "block": "E", "name": "Strict Hanging Leg Raises", "sets_reps": "3 x 10-15", "notes": "Dead hang. Builds grip and lower abs.", "metric": "reps" }
+      ]
+    },
+    {
+      "id": "upper_b",
+      "name": "Upper B",
+      "color": "#448AFF",
+      "emoji": "💪",
+      "exercises": [
+        { "block": "A1", "name": "Seated Dumbbell Press", "sets_reps": "3 x 8-12", "notes": "Superset with A2. Rest 60s after A2.", "metric": "reps" },
+        { "block": "A2", "name": "Wide-Grip Lat Pulldown", "sets_reps": "3 x 8-12", "notes": "Drive elbows to the floor.", "metric": "reps" },
+        { "block": "B1", "name": "Cable Lateral Raises", "sets_reps": "4 x 12-15", "notes": "Superset with B2. Rest 60s after B2.", "metric": "reps" },
+        { "block": "B2", "name": "Face Pulls", "sets_reps": "4 x 12-15", "notes": "Pull to the forehead.", "metric": "reps" },
+        { "block": "C1", "name": "EZ Bar Skull Crushers", "sets_reps": "3 x 8-12", "notes": "Superset with C2. Rest 60s after C2.", "metric": "reps" },
+        { "block": "C2", "name": "Hammer Curls", "sets_reps": "3 x 8-12", "notes": "Targets brachialis for arm thickness.", "metric": "reps" }
+      ]
+    },
+    {
+      "id": "lower_b",
+      "name": "Lower B",
+      "color": "#9C4DFF",
+      "emoji": "🏋️",
+      "exercises": [
+        { "block": "A", "name": "Romanian Deadlifts (RDLs)", "sets_reps": "3 x 8-10", "notes": "Heavy hinge. Rest 2-3 minutes.", "metric": "reps" },
+        { "block": "B1", "name": "Leg Extensions", "sets_reps": "3 x 12-15", "notes": "Superset with B2. Rest 60s after B2.", "metric": "reps" },
+        { "block": "B2", "name": "Seated Hamstring Curls", "sets_reps": "3 x 10-15", "notes": "Control the eccentric phase.", "metric": "reps" },
+        { "block": "C", "name": "Heavy Farmer's Walks", "sets_reps": "3 x 30-45 sec", "notes": "Heavy load for max grip/core tension.", "metric": "seconds" },
+        { "block": "D", "name": "Seated Calf Raises", "sets_reps": "4 x 12-15", "notes": "Targets the soleus.", "metric": "reps" },
+        { "block": "E", "name": "Heavy Cable Crunches", "sets_reps": "3 x 12-15", "notes": "Treat like a heavy compound lift.", "metric": "reps" }
+      ]
+    }
+  ],
+  "pools": [
+    {
+      "id": "exercise_pool",
+      "name": "Exercise Pool",
+      "color": "#FF9F1C",
+      "emoji": "🧰",
+      "exercises": [
+        { "name": "Deficit Reverse Lunges", "metric": "reps" },
+        { "name": "Machine Hack Squats", "metric": "reps" },
+        { "name": "Single-Leg Romanian Deadlifts", "metric": "reps" },
+        { "name": "Sissy Squats", "metric": "reps" },
+        { "name": "Pendlay Rows", "metric": "reps" },
+        { "name": "Single-Arm Meadow Rows", "metric": "reps" },
+        { "name": "Neutral Grip Dumbbell Bench Press", "metric": "reps" },
+        { "name": "Decline Barbell Press", "metric": "reps" },
+        { "name": "Arnold Presses", "metric": "reps" },
+        { "name": "Cable Upright Rows (with rope attachment)", "metric": "reps" },
+        { "name": "Reverse Pec Deck Flyes", "metric": "reps" },
+        { "name": "Bayesian Cable Curls", "metric": "reps" },
+        { "name": "Cross-Body Hammer Curls", "metric": "reps" },
+        { "name": "JM Presses", "metric": "reps" },
+        { "name": "Katana Cable Extensions", "metric": "reps" }
+      ]
+    },
+    {
+      "id": "functional",
+      "name": "Functional",
+      "color": "#26C6DA",
+      "emoji": "🧗",
+      "exercises": [
+        { "name": "Suitcase Carries (Single-arm offset load)", "metric": "seconds" },
+        { "name": "Zercher Squats", "metric": "reps" },
+        { "name": "Towel Pull-Ups", "metric": "reps" },
+        { "name": "Sandbag Bear Hug Squats", "metric": "reps" },
+        { "name": "Kettlebell Front Rack Lunges", "metric": "reps" },
+        { "name": "Trap Bar Deadlifts", "metric": "reps" },
+        { "name": "Single-Arm Dumbbell Overhead Press", "metric": "reps" },
+        { "name": "Fat Gripz Deadlifts or Rows", "metric": "reps" },
+        { "name": "Renegade Rows", "metric": "reps" },
+        { "name": "Standing Ab Wheel Rollouts", "metric": "reps" },
+        { "name": "Z-Press (Seated on floor, legs straight)", "metric": "reps" },
+        { "name": "Hand-Over-Hand Heavy Sled Pulls", "metric": "seconds" },
+        { "name": "Dead Bugs with Heavy Kettlebell Pullover", "metric": "reps" },
+        { "name": "Plate Pinch Holds (Timed for max duration)", "metric": "seconds" },
+        { "name": "Pallof Presses (Cable anti-rotation)", "metric": "reps" }
+      ]
+    }
+  ]
+}

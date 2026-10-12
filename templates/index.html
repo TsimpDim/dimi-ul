@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Dimi UL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="topbar-brand">
+        <span class="brand-mark">💪</span>
+        <span class="brand-name">Dimi UL</span>
+      </div>
+      <div class="topbar-user" id="topbar-user">
+        <a class="logout-btn" href="/logout" title="Log out">
+          <span class="material-symbols-rounded">logout</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="content">
+      <!-- HOME -->
+      <section class="view" id="view-home">
+        <h1 class="view-title">Ready to train?</h1>
+        <p class="view-sub">Pick a template to start your workout.</p>
+
+        <div id="active-card"></div>
+
+        <h2 class="section-title">Workout templates</h2>
+        <div id="template-list" class="template-list"></div>
+      </section>
+
+      <!-- WORKOUT -->
+      <section class="view" id="view-workout">
+        <div id="workout-header"></div>
+        <div id="exercise-list" class="exercise-list"></div>
+        <button class="btn btn-ghost" id="add-exercise-btn">
+          <span class="material-symbols-rounded">add</span> Add exercise
+        </button>
+        <div class="workout-actions">
+          <button class="btn btn-primary" id="finish-btn">Finish workout</button>
+          <button class="btn btn-danger" id="discard-btn">Discard</button>
+        </div>
+      </section>
+
+      <!-- LOG -->
+      <section class="view" id="view-log">
+        <h1 class="view-title">History</h1>
+        <p class="view-sub">Every workout you've completed.</p>
+        <div id="log-list" class="log-list"></div>
+      </section>
+
+      <!-- ANALYTICS -->
+      <section class="view" id="view-analytics">
+        <h1 class="view-title">Progress</h1>
+        <p class="view-sub">Your performance over time.</p>
+        <div id="analytics-body"></div>
+      </section>
+    </main>
+
+    <nav class="bottomnav">
+      <button class="nav-btn is-active" data-view="home">
+        <span class="material-symbols-rounded">fitness_center</span>
+        <span class="nav-label">Workout</span>
+      </button>
+      <button class="nav-btn" data-view="log">
+        <span class="material-symbols-rounded">history</span>
+        <span class="nav-label">Log</span>
+      </button>
+      <button class="nav-btn" data-view="analytics">
+        <span class="material-symbols-rounded">insights</span>
+        <span class="nav-label">Progress</span>
+      </button>
+    </nav>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <div id="sheet" class="sheet-backdrop" hidden>
+    <div class="sheet">
+      <div class="sheet-handle"></div>
+      <div class="sheet-title" id="sheet-title">Add exercise</div>
+      <div class="sheet-tabs" id="sheet-tabs"></div>
+      <div class="sheet-body" id="sheet-body"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
